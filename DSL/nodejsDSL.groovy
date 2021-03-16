@@ -16,7 +16,7 @@ job('Aplicacion Node.js DSL') {
         shell("npm install")
     }
     publishers {
-	slackNotifier {
+    slackNotifier {
             notifyAborted(true)
             notifyEveryFailure(true)
             notifyNotBuilt(false)
