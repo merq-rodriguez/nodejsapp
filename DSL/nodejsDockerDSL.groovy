@@ -10,7 +10,7 @@ job('Aplicacion Node.js Docker DSL') {
         scm('H/7 * * * *')
     }
     wrappers {
-        nodejs('nodejs')
+        nodejs('AppNodejs')
     }
     steps {
         dockerBuildAndPublish {
